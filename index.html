@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metrô de Paris - Projeto 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <h1>
+                Pathfinder - Metrô de Paris
+            </h1>
+
+            <div class="selector-wrapper">
+                <div class="station-selector">
+                    <p>Estação de início</p>
+                    <div class="input-container">
+                        <span class="op-btn" id="minus-inicio">-</span>
+                        <span class="number" id="inicio">1</span>
+                        <span class="op-btn" id="plus-inicio">+</span>
+                    </div>
+                </div>
+
+                <div class="station-selector">
+                    <p>Estação de destino</p>
+                    <div class="input-container">
+                        <span class="op-btn" id="minus-destino">-</span>
+                        <span class="number" id="destino">1</span>
+                        <span class="op-btn" id="plus-destino">+</span>
+                    </div>
+                </div>
+            </div> 
+
+            <button id="submit-btn" disabled="true">Gerar Trajeto</button>
+
+            <p id="path"></p>
+        </div>
+    </div>
+
+    <script src="projeto.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
